@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matt — Projects &amp; Interests</title>
+  <meta name="description" content="Personal site showcasing electronics, software, sports, and creative projects.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#top" class="nav-logo">mattpennington<span class="accent">.</span>net</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero container">
+      <p class="hero-eyebrow">// hello, world</p>
+      <h1>I'm <span class="accent">Matt</span>.<br>I build things — in hardware, software, and everywhere in between.</h1>
+      <p class="hero-sub">
+        <!-- EDIT ME: one-sentence intro about yourself -->
+        Maker, coder, and lifelong tinkerer. This is where I collect the projects,
+        experiments, and hobbies that keep me busy.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">See my projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section container">
+      <h2><span class="prompt" aria-hidden="true">//</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <!-- EDIT ME: replace with your own bio -->
+          <p>
+            By day I work with technology; by night (and weekends) I'm usually
+            soldering something, writing code for fun, or getting outside.
+            I like projects that mix disciplines — hardware that talks to
+            software, tools that solve real problems, and anything that
+            involves learning a new skill.
+          </p>
+          <p>
+            This site is a living portfolio of what I'm working on and what
+            I care about. Everything here is a placeholder until I swap in
+            the real stories — but the structure is ready.
+          </p>
+        </div>
+        <ul class="about-facts">
+          <li><span class="fact-label">Location</span> <!-- EDIT ME -->Planet Earth</li>
+          <li><span class="fact-label">Currently building</span> <!-- EDIT ME -->Something with too many LEDs</li>
+          <li><span class="fact-label">Currently learning</span> <!-- EDIT ME -->KiCad, web dev</li>
+          <li><span class="fact-label">Favorite tools</span> <!-- EDIT ME -->Soldering iron, VS Code</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section container">
+      <h2><span class="prompt" aria-hidden="true">//</span> Projects</h2>
+      <p class="section-sub">A selection of things I've built or am building. Filter by category:</p>
+
+      <div class="filter-bar" role="tablist" aria-label="Project filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="electronics">Electronics</button>
+        <button class="filter-btn" data-filter="software">Software</button>
+        <button class="filter-btn" data-filter="creative">Creative</button>
+      </div>
+
+      <div class="project-grid">
+        <!-- EDIT ME: duplicate/edit these cards for your real projects.
+             data-category must be one of: electronics, software, creative -->
+        <article class="project-card" data-category="electronics">
+          <div class="card-icon">🔌</div>
+          <h3>Custom PCB Project</h3>
+          <p>A placeholder for that circuit board you designed. Describe what it does, what you learned, and link to the repo or write-up.</p>
+          <ul class="tag-list"><li>KiCad</li><li>PCB</li><li>Embedded</li></ul>
+          <a class="card-link" href="#">Read more →</a>
+        </article>
+
+        <article class="project-card" data-category="electronics">
+          <div class="card-icon">🤖</div>
+          <h3>Microcontroller Build</h3>
+          <p>An Arduino / ESP32 / Raspberry Pi project. What problem did it solve? What sensors, displays, or motors were involved?</p>
+          <ul class="tag-list"><li>ESP32</li><li>Sensors</li><li>3D Printing</li></ul>
+          <a class="card-link" href="#">Read more →</a>
+        </article>
+
+        <article class="project-card" data-category="software">
+          <div class="card-icon">💻</div>
+          <h3>Software Tool</h3>
+          <p>An app, script, or open-source contribution. Explain what it automates or improves, and link to GitHub.</p>
+          <ul class="tag-list"><li>Python</li><li>CLI</li><li>Open Source</li></ul>
+          <a class="card-link" href="#">Read more →</a>
+        </article>
+
+        <article class="project-card" data-category="software">
+          <div class="card-icon">🌐</div>
+          <h3>This Website</h3>
+          <p>Hand-built with plain HTML, CSS, and JavaScript — no frameworks, no build step. Fast, simple, and easy to maintain.</p>
+          <ul class="tag-list"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <a class="card-link" href="#">Read more →</a>
+        </article>
+
+        <article class="project-card" data-category="creative">
+          <div class="card-icon">📷</div>
+          <h3>Creative Project</h3>
+          <p>Photography, music, woodworking, cooking — whatever you make with your hands or your eye. Add a gallery or story here.</p>
+          <ul class="tag-list"><li>Photography</li><li>Making</li></ul>
+          <a class="card-link" href="#">Read more →</a>
+        </article>
+
+        <article class="project-card" data-category="creative">
+          <div class="card-icon">✍️</div>
+          <h3>Writing / Blog</h3>
+          <p>Notes, build logs, or essays. A place to document the process, not just the result.</p>
+          <ul class="tag-list"><li>Writing</li><li>Build Logs</li></ul>
+          <a class="card-link" href="#">Read more →</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ INTERESTS ============ -->
+    <section id="interests" class="section container">
+      <h2><span class="prompt" aria-hidden="true">//</span> Beyond the Bench</h2>
+      <p class="section-sub">Not everything happens at a desk.</p>
+      <div class="interest-grid">
+        <!-- EDIT ME: swap in your real hobbies -->
+        <div class="interest-card">
+          <div class="card-icon">🏐</div>
+          <h3>Volleyball</h3>
+          <p>On the court whenever I can be. Add your league, position, or favorite tournament stories here.</p>
+        </div>
+        <div class="interest-card">
+          <div class="card-icon">🥾</div>
+          <h3>Outdoors</h3>
+          <p>Hiking, cycling, or whatever gets you outside. Trail recommendations welcome.</p>
+        </div>
+        <div class="interest-card">
+          <div class="card-icon">🔧</div>
+          <h3>Tinkering</h3>
+          <p>Taking things apart to see how they work — and occasionally putting them back together better.</p>
+        </div>
+        <div class="interest-card">
+          <div class="card-icon">📚</div>
+          <h3>Always Learning</h3>
+          <p>Books, courses, rabbit holes. List what you're currently deep-diving into.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section container contact">
+      <h2><span class="prompt" aria-hidden="true">//</span> Get In Touch</h2>
+      <p class="section-sub">
+        Want to talk projects, trade ideas, or challenge me to a volleyball match?
+      </p>
+      <a href="mailto:matt@mattpennington.net" class="btn btn-primary btn-lg">Say hello 👋</a>
+      <div class="social-links">
+        <!-- EDIT ME: update hrefs with your real profiles, remove any you don't use -->
+        <a href="https://github.com/" aria-label="GitHub" title="GitHub">GitHub</a>
+        <a href="https://linkedin.com/" aria-label="LinkedIn" title="LinkedIn">LinkedIn</a>
+        <a href="https://youtube.com/" aria-label="YouTube" title="YouTube">YouTube</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Matt Pennington. Built by hand with HTML, CSS &amp; a little JavaScript.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
